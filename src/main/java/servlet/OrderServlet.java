@@ -25,7 +25,7 @@ public class OrderServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         orderList = CustomUtils.createDummyList();
-        id = 0;
+        id = 1;
     }
 
     @Override
