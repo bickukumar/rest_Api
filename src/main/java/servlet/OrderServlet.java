@@ -141,6 +141,10 @@ public class OrderServlet extends HttpServlet {
     public void destroy() {
         this.orderList.clear();
         id = 1;
+        PrintWriter out = resp.getWriter();
+        out.write(id);
+        out.write(orderlist);
+        out.close();
     }
 
     private String addOrder(int quantity, String name, int id,  HttpServletResponse response){
